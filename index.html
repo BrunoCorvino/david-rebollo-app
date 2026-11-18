@@ -125,6 +125,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .track .grp b{font-weight:800}
 .track .grp i{font-style:normal;color:transparent;-webkit-text-stroke:1px var(--brass)}
 .track{gap:0}
+/* frase única, sem repetição */
+.marquee .track{width:auto;animation:none;justify-content:center;padding-inline:var(--gutter,24px)}
+.marquee .track .grp+.grp{display:none}
+.marquee .track .grp{display:block;text-align:center;white-space:normal;text-wrap:balance;font-size:clamp(24px,3.2vw,48px);line-height:1.05}
+.marquee .track .grp::after{display:none}
+.marquee .track .grp b,.marquee .track .grp i{display:inline}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
 /* MANIFESTO (scroll lit words) */
