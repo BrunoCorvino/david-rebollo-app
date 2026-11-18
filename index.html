@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="David Rebollo: ministério, Escolas DR, livros e DR Business. Presença e revelação para as nações.">
+<meta property="og:title" content="David Rebollo">
+<meta property="og:description" content="Presença e revelação para as nações.">
+<meta property="og:image" content="/hero.jpg">
+<link rel="icon" type="image/png" href="/fire.png">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>David Rebollo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: cinematic single scroll. Dark "sanctuary at night" world, light enters as brass. One bright stone chapter (livros) breaks the rhythm. */
+:root{
+  --ink:#080B14;        /* noite */
+  --ink-2:#0F1424;      /* superfície */
+  --ink-3:#1A2136;      /* linhas */
+  --brass:#D9B26F;      /* luz */
+  --brass-deep:#9C7136;
+  --ember:#E2703A;      /* brasa, só em detalhes */
+  --stone:#E6E2DA;      /* capítulo claro */
+  --fg:#EDEAE3;
+  --muted:#8C93A8;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-serif:"Bodoni Moda","Didot","Times New Roman",serif;
+  --f-body:"Manrope",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,monospace;
+  --gutter:max(16px,env(safe-area-inset-left,0px));
+  --gutter-r:max(16px,env(safe-area-inset-right,0px));
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{background:var(--ink);color:var(--fg);font:16px/1.65 var(--f-body);overflow-x:hidden}
+::selection{background:var(--brass);color:var(--ink)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1280px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+@media (max-width:520px){.wrap{padding-left:var(--gutter);padding-right:var(--gutter-r)}}
+.eyebrow{font:500 12px/1 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--brass)}
+.serif{font-family:var(--f-serif);font-style:italic;font-weight:400}
+
+/* NAV */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+.nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(8,11,20,.78);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px);border-color:var(--ink-3)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.fire{height:40px;width:auto;display:block;filter:drop-shadow(0 0 10px rgba(226,112,58,.35))}
+.foot .brand{display:flex;align-items:center;gap:16px}
+.foot .brand .fire{height:64px}
+.navr{display:flex;align-items:center;gap:18px}
+.flags{display:flex;gap:6px;padding:4px;border:1px solid var(--ink-3);border-radius:999px;background:rgba(8,11,20,.4)}
+.flags button{width:26px;height:26px;border-radius:50%;padding:0;border:0;background:none;cursor:pointer;opacity:.45;filter:saturate(.6);transition:opacity .25s,filter .25s,transform .25s,box-shadow .25s;overflow:hidden;display:block}
+.flags button svg{width:100%;height:100%;display:block;border-radius:50%}
+.flags button:hover{opacity:.85;transform:scale(1.08)}
+.flags button[aria-pressed="true"]{opacity:1;filter:none;box-shadow:0 0 0 2px var(--ink),0 0 0 3px var(--brass)}
+@media (max-width:520px){.mark span{display:none}.navr{gap:10px}.nav-cta{padding:11px 12px}.flags button{width:24px;height:24px}}
+.mono{width:36px;height:36px;border:1px solid var(--brass);display:grid;place-items:center;font:700 13px/1 var(--f-display);font-stretch:70%;color:var(--brass);letter-spacing:.04em}
+.mark span{font:600 13px/1 var(--f-display);font-stretch:115%;letter-spacing:.28em}
+.links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.links a{text-decoration:none;font:500 13px/1 var(--f-body);color:var(--muted);transition:color .2s;position:relative}
+.links a:hover,.links a.on{color:var(--fg)}
+.links a.on::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:1px;background:var(--brass)}
+.nav-cta{font:600 12px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:12px 18px;border:1px solid var(--brass);color:var(--brass);transition:.25s}
+.nav-cta:hover{background:var(--brass);color:var(--ink)}
+.progress{position:absolute;left:0;bottom:-1px;height:1px;background:linear-gradient(90deg,var(--brass-deep),var(--brass));width:0}
+@media (max-width:980px){.links{display:none}}
+
+/* HERO */
+.hero{position:relative;min-height:max(680px,100svh);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-media video,.hero-media canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-media video{filter:saturate(.9) contrast(1.08) brightness(.5);transform:scale(1.04);animation:drift 30s ease-in-out infinite alternate;transition:filter .6s}
+@keyframes drift{to{transform:scale(1.1) translate(-1.5%,1%)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(120% 80% at 70% 10%,transparent 30%,rgba(8,11,20,.55) 70%),
+  linear-gradient(180deg,rgba(8,11,20,.75) 0%,transparent 28%,rgba(8,11,20,.4) 60%,var(--ink) 100%)}
+.grain{position:absolute;inset:-50%;z-index:-1;opacity:.07;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}33%{transform:translate(-3%,2%)}66%{transform:translate(2%,-3%)}100%{transform:translate(0,0)}}
+.hero-inner{width:100%;padding-block:140px 56px}
+.hero-top,.hero h1{transition:opacity .6s}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.hero h1{margin:0;font-family:var(--f-display);font-weight:800;font-stretch:62%;line-height:.82;letter-spacing:-.01em;text-transform:uppercase;font-size:clamp(84px,19.5vw,300px)}
+.hero h1 .l{display:block;overflow:hidden}
+.hero h1 .l span{display:inline-block;transform:translateY(0);animation:rise 1.4s cubic-bezier(.16,1,.3,1) both}
+.hero h1 .l:nth-child(2) span{animation-delay:.12s;background:linear-gradient(100deg,var(--fg) 0%,var(--fg) 40%,var(--brass) 52%,var(--fg) 64%,var(--fg) 100%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rise 1.4s .12s cubic-bezier(.16,1,.3,1) both,sheen 7s 1.6s ease-in-out infinite}
+@keyframes rise{from{transform:translateY(105%)}to{transform:translateY(0)}}
+@keyframes sheen{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+.hero-claim{max-width:520px;font-size:clamp(22px,2.4vw,32px);line-height:1.25;margin:0;animation:fade 1.2s .7s both}
+.hero-claim b{font-family:var(--f-body);font-style:normal;font-weight:500;color:var(--brass)}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero-bar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(217,178,111,.25);animation:fade 1.2s 1s both}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:12px;text-decoration:none;cursor:pointer;font:600 13px/1 var(--f-body);letter-spacing:.1em;text-transform:uppercase;padding:18px 26px;border:1px solid var(--brass);background:transparent;color:var(--fg);transition:.3s;position:relative;overflow:hidden}
+.btn.fill{background:var(--brass);color:var(--ink)}
+.btn.fill:hover{background:var(--fg)}
+.btn:not(.fill):hover{background:rgba(217,178,111,.12)}
+.btn svg{width:16px;height:16px;flex:none}
+.sound{background:none;border:0;color:var(--muted);font:500 12px/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;display:flex;align-items:center;gap:12px;cursor:pointer;padding:8px 0}
+.sound .ring{width:44px;height:44px;border-radius:50%;border:1px solid var(--ink-3);display:grid;place-items:center;position:relative}
+.sound .ring::before{content:"";position:absolute;inset:-1px;border-radius:50%;border:1px solid var(--brass);animation:pulse 2.4s infinite}
+@keyframes pulse{from{transform:scale(1);opacity:.8}to{transform:scale(1.6);opacity:0}}
+.sound:hover{color:var(--fg)}
+.roles{display:flex;gap:10px;flex-wrap:wrap;font:500 11px/1 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.roles i{font-style:normal;color:var(--brass-deep)}
+
+/* MARQUEE */
+.marquee{border-block:1px solid var(--ink-3);overflow:hidden;padding-block:22px;background:var(--ink)}
+.track{display:flex;gap:48px;width:max-content;animation:scroll 60s linear infinite}
+.track span{font:800 clamp(28px,4vw,52px)/1 var(--f-display);font-stretch:62%;text-transform:uppercase;letter-spacing:.02em;color:transparent;-webkit-text-stroke:1px #3A4360;white-space:nowrap;display:flex;align-items:center;gap:48px}
+.track span::after{content:"";width:10px;height:10px;background:var(--brass);transform:rotate(45deg)}
+.track span.o{color:var(--fg);-webkit-text-stroke:0}
+.track .grp{display:flex;align-items:center;gap:.32em;font:800 clamp(28px,4vw,52px)/1 var(--f-display);font-stretch:62%;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;color:var(--fg);-webkit-text-stroke:0}
+.track .grp::after{content:"";width:10px;height:10px;background:var(--brass);transform:rotate(45deg);margin:0 48px 0 calc(48px - .32em);flex:none}
+.track .grp b{font-weight:800}
+.track .grp i{font-style:normal;color:transparent;-webkit-text-stroke:1px var(--brass)}
+.track{gap:0}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* MANIFESTO (scroll lit words) */
+.manifesto{padding-block:clamp(110px,16vw,200px);position:relative;overflow:hidden;isolation:isolate;background:#060507}
+#neuro{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:-2}
+.neuro-veil{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(6,5,7,.6) 0%,rgba(6,5,7,.2) 55%,transparent 100%),linear-gradient(180deg,var(--ink) 0%,transparent 14%,transparent 86%,var(--ink) 100%)}
+.manifesto .eyebrow{margin-bottom:40px;display:block}
+.lit{margin:0;font-family:var(--f-display);font-weight:600;font-stretch:80%;font-size:clamp(34px,6.2vw,92px);line-height:1.02;letter-spacing:-.015em;text-wrap:balance;max-width:16ch}
+.lit .w{color:rgba(237,234,227,.16);transition:color .5s}
+.lit .w.on{color:var(--fg)}
+.lit .w.gold.on{color:var(--brass)}
+.lit .w.it{font-family:var(--f-serif);font-style:italic;font-weight:400;font-stretch:100%}
+.mv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:rgba(217,178,111,.18);margin-top:80px;border:1px solid var(--ink-3)}
+.mv div{background:rgba(6,5,7,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:36px 32px}
+.mv h3{margin:12px 0 0;font:400 clamp(22px,2.4vw,30px)/1.25 var(--f-serif);font-style:italic}
+@media (max-width:700px){.mv{grid-template-columns:1fr}}
+
+/* TRAJETÓRIA */
+.journey{padding-block:clamp(90px,12vw,160px);background:linear-gradient(180deg,var(--ink),var(--ink-2))}
+.j-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,6vw,96px);align-items:start}
+@media (max-width:900px){.j-grid{grid-template-columns:1fr}}
+.portrait{position:sticky;top:110px;aspect-ratio:4/5;max-width:100%;background:
+  radial-gradient(60% 50% at 50% 30%,rgba(217,178,111,.22),transparent 70%),
+  linear-gradient(180deg,#151B2E,#0B0F1B);border:1px solid var(--ink-3);overflow:hidden;display:flex;align-items:flex-end}
+@media (max-width:900px){.portrait{position:relative;top:0}}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;filter:saturate(.7) contrast(1.05) brightness(.92)}
+.portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,11,20,.15),transparent 40%,rgba(8,11,20,.7));pointer-events:none}
+.portrait figcaption{z-index:1}
+.portrait figcaption{position:relative;padding:20px;font:500 11px/1.5 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);width:100%;background:linear-gradient(0deg,rgba(8,11,20,.9),transparent)}
+.portrait .tag{position:absolute;top:18px;left:18px;font:500 10px/1 var(--f-mono);letter-spacing:.16em;color:var(--brass);border:1px dashed var(--brass-deep);padding:6px 8px;text-transform:uppercase}
+.j-head h2{margin:18px 0 24px;font:800 clamp(44px,6vw,88px)/.9 var(--f-display);font-stretch:62%;text-transform:uppercase}
+.j-head h2 em{font:400 .78em/1 var(--f-serif);font-style:italic;text-transform:none;color:var(--brass);letter-spacing:0}
+.j-head p{max-width:58ch;color:#C5C8D2;margin:0 0 56px}
+.steps{list-style:none;margin:0;padding:0;border-left:1px solid var(--ink-3)}
+.steps li{position:relative;padding:0 0 44px 36px}
+.steps li::before{content:"";position:absolute;left:-5px;top:8px;width:9px;height:9px;background:var(--ink);border:1px solid var(--brass);transform:rotate(45deg);transition:.4s}
+.steps li.seen::before{background:var(--brass);box-shadow:0 0 18px var(--brass)}
+.steps .when{font:500 12px/1 var(--f-mono);letter-spacing:.16em;color:var(--brass);text-transform:uppercase}
+.steps h4{margin:10px 0 8px;font:700 clamp(22px,2.2vw,28px)/1.15 var(--f-display);font-stretch:85%}
+.steps p{margin:0;color:var(--muted);max-width:52ch}
+
+/* NÚMEROS */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--ink-3)}
+.stat{padding:48px 28px;border-right:1px solid var(--ink-3)}
+.stat:last-child{border-right:0}
+.stat .n{font:800 clamp(56px,7vw,108px)/.9 var(--f-display);font-stretch:62%;font-variant-numeric:tabular-nums;display:block;background:linear-gradient(180deg,var(--fg),#8E93A3);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .n sup{font-size:.4em;color:var(--brass);-webkit-text-fill-color:var(--brass);vertical-align:top;margin-left:4px}
+.stat p{margin:14px 0 0;color:var(--muted);font-size:14px;max-width:24ch}
+@media (max-width:900px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--ink-3)}}
+@media (max-width:420px){.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--ink-3)}}
+
+/* VOZ — citação */
+.voice{position:relative;overflow:hidden;border-bottom:1px solid var(--ink-3)}
+.v-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);min-height:620px}
+@media (max-width:860px){.v-grid{grid-template-columns:1fr}}
+.v-photo{position:relative;min-height:420px;overflow:hidden}
+.v-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 30%;filter:grayscale(1) contrast(1.25) brightness(.85);transform:scale(1.05)}
+.v-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 55%,var(--ink)),linear-gradient(0deg,rgba(8,11,20,.6),transparent 40%)}
+@media (max-width:860px){.v-photo::after{background:linear-gradient(0deg,var(--ink),transparent 60%)}}
+.v-text{display:flex;flex-direction:column;justify-content:center;gap:28px;padding:clamp(40px,6vw,96px) max(24px,env(safe-area-inset-right,0px)) clamp(40px,6vw,96px) clamp(24px,4vw,64px)}
+.v-text blockquote{margin:0;font:400 clamp(30px,4.2vw,60px)/1.1 var(--f-serif);font-style:italic;text-wrap:balance;max-width:20ch}
+.v-text blockquote b{font-weight:400;color:var(--brass)}
+.v-text cite{font:500 12px/1.6 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-style:normal}
+.v-text cite span{color:var(--brass)}
+.qmark{font:400 160px/.6 var(--f-serif);color:var(--brass);opacity:.5;height:60px}
+
+/* FRENTES (expanding panels) */
+.fronts{padding-block:clamp(100px,13vw,170px)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:56px}
+.sec-head h2{margin:16px 0 0;font:800 clamp(44px,6vw,88px)/.9 var(--f-display);font-stretch:62%;text-transform:uppercase;max-width:12ch}
+.sec-head p{max-width:40ch;color:var(--muted);margin:0}
+.panels{display:flex;gap:10px;height:560px}
+.panel{position:relative;flex:1;min-width:0;overflow:hidden;border:1px solid var(--ink-3);background:var(--ink-2);transition:flex .7s cubic-bezier(.16,1,.3,1);cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;padding:32px;text-decoration:none}
+.panel.open{flex:2.6}
+@media (min-width:861px){.panel:not(.open) h3{font-size:clamp(28px,2.6vw,40px)}}
+.panel .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.45) contrast(1.1);transform:scale(1.06);transition:filter .8s,transform 1.2s cubic-bezier(.16,1,.3,1)}
+.panel.open .ph{filter:grayscale(0) brightness(.55) contrast(1.05);transform:scale(1)}
+.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,11,20,.25) 0%,rgba(8,11,20,.1) 35%,rgba(8,11,20,.92) 85%);pointer-events:none}
+.panel>*:not(.ph){z-index:1}
+.panel canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55;mix-blend-mode:screen;z-index:1}
+.panel .num{z-index:1;position:absolute;top:28px;left:32px;font:500 12px/1 var(--f-mono);letter-spacing:.18em;color:var(--brass)}
+.panel h3{position:relative;z-index:1;margin:0;font:800 clamp(34px,4vw,60px)/.9 var(--f-display);font-stretch:62%;text-transform:uppercase;white-space:nowrap}
+.panel .body{position:relative;z-index:1;max-width:46ch;max-height:0;opacity:0;overflow:hidden;transition:max-height .7s,opacity .5s .1s}
+.panel.open .body{max-height:320px;opacity:1}
+.panel .body p{color:#C5C8D2;margin:16px 0 20px}
+.panel .chip{display:inline-flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.panel .chip span{font:500 11px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--ink-3);padding:8px 10px;color:var(--muted);background:rgba(8,11,20,.6)}
+.link{font:600 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);text-decoration:none;display:inline-flex;gap:10px;align-items:center}
+.link::after{content:"→";transition:transform .3s}
+.link:hover::after{transform:translateX(6px)}
+@media (max-width:860px){.panels{flex-direction:column;height:auto}.panel{min-height:150px}.panel.open{flex:1}.panel .body{max-height:none;opacity:1}}
+
+/* LIVROS — sistema orbital */
+.books{background:radial-gradient(70% 60% at 35% 50%,#151B30,var(--ink) 70%);padding-block:clamp(100px,13vw,170px);position:relative;overflow:hidden;border-top:1px solid var(--ink-3)}
+.o-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,64px);align-items:center}
+@media (max-width:900px){.o-grid{grid-template-columns:1fr}}
+.orbit{position:relative;height:clamp(460px,48vw,620px);touch-action:pan-y;perspective:1100px;perspective-origin:50% 28%;--R:300px}
+@media (max-width:1100px){.orbit{--R:240px}}
+@media (max-width:600px){.orbit{--R:135px;height:440px}}
+.ring3{position:absolute;left:50%;top:46%;width:0;height:0;transform-style:preserve-3d;transform:translateZ(calc(var(--R) * -.55)) rotateX(-22deg) rotateZ(-5deg)}
+.floor3{position:absolute;left:calc(var(--R) * -1.12);top:calc(var(--R) * -1.12);width:calc(var(--R) * 2.24);height:calc(var(--R) * 2.24);border-radius:50%;transform:rotateX(90deg) translateZ(-95px);background:radial-gradient(closest-side,rgba(217,178,111,.16),rgba(226,112,58,.05) 60%,transparent);border:1px solid rgba(217,178,111,.22);box-shadow:0 0 0 18px rgba(217,178,111,.03),inset 0 0 60px rgba(217,178,111,.08);pointer-events:none}
+.floor3::after{content:"";position:absolute;inset:16%;border-radius:50%;border:1px dashed rgba(217,178,111,.14)}
+.sun{position:absolute;left:-75px;top:-95px;width:150px;height:150px;transform-style:preserve-3d;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,rgba(226,112,58,.35),rgba(217,178,111,.12) 45%,transparent 70%);pointer-events:none}
+.sun img{height:110px;filter:drop-shadow(0 0 22px rgba(226,112,58,.7));animation:flick 3s ease-in-out infinite}
+@keyframes flick{0%,100%{transform:scale(1)}40%{transform:scale(1.05) translateY(-2px)}70%{transform:scale(.98)}}
+.ob{position:absolute;left:calc(var(--bw) / -2);top:-110px;width:var(--bw);--bw:clamp(100px,11vw,150px);background:none;border:0;padding:0;cursor:pointer;will-change:transform,filter;transform-origin:center}
+@media (max-width:600px){.ob{--bw:82px;top:-72px}.sun img{height:76px}.ob .tip{display:none}}
+.ob .cover{width:100%}
+.ob .mock{display:block;width:118%;margin-left:-9%;filter:drop-shadow(0 30px 30px rgba(0,0,0,.7))}
+.ob.sel .mock{filter:drop-shadow(0 30px 30px rgba(0,0,0,.7)) drop-shadow(0 0 18px rgba(217,178,111,.45))}
+.preface .tags{display:flex;flex-wrap:wrap;gap:8px}
+.preface .tags span{font:500 11px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--brass);border:1px solid rgba(217,178,111,.35);padding:8px 10px}
+.ob.sel .cover{outline:1px solid var(--brass);outline-offset:6px}
+.ob .tip{position:absolute;left:50%;top:calc(100% + 14px);transform:translateX(-50%);white-space:nowrap;font:500 10px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);opacity:0;transition:opacity .3s}
+.ob:hover .tip,.ob.sel .tip{opacity:1}
+.cover{aspect-ratio:2/3;max-width:100%;position:relative;border-radius:2px 4px 4px 2px;overflow:hidden;padding:14px 12px;display:flex;flex-direction:column;justify-content:space-between;text-align:left;box-shadow:0 30px 50px -20px rgba(0,0,0,.8)}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:linear-gradient(90deg,rgba(0,0,0,.35),rgba(255,255,255,.08),transparent);z-index:1}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.18),transparent 35%);pointer-events:none;z-index:1}
+.cover .au{font:600 7px/1 var(--f-display);font-stretch:120%;letter-spacing:.3em;text-transform:uppercase;opacity:.8}
+.cover .ti{font:800 clamp(15px,1.7vw,20px)/.92 var(--f-display);font-stretch:62%;text-transform:uppercase}
+.cover .ti em{display:block;font:400 clamp(10px,1vw,12px)/1.15 var(--f-serif);font-style:italic;text-transform:none;margin-top:6px;opacity:.85}
+.c1{background:radial-gradient(80% 60% at 50% 35%,#F3CF86,#B7772E 45%,#3A1E0B);color:#1C0F05}
+.c2{background:linear-gradient(160deg,#1C2C5C,#0B1026 70%);color:#EAD7AF}
+.c3{background:linear-gradient(180deg,#0E3A33,#06201C);color:#E6CC8F}
+.c4{background:linear-gradient(170deg,#E9E2D3,#C9BFA9);color:#2A1E12}
+.c5{background:linear-gradient(160deg,#2A0D12,#0B0507);color:#D9B26F}
+.preface{position:relative;border:1px solid var(--ink-3);background:rgba(15,20,36,.75);backdrop-filter:blur(6px);padding:clamp(28px,3.5vw,48px);min-height:420px;display:flex;flex-direction:column;gap:18px}
+.preface .k{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.preface .idx{font:500 12px/1 var(--f-mono);letter-spacing:.16em;color:var(--muted)}
+.preface h3{margin:0;font:800 clamp(36px,4vw,56px)/.9 var(--f-display);font-stretch:62%;text-transform:uppercase;text-wrap:balance}
+.preface .sub{margin:-6px 0 0;font:400 20px/1.2 var(--f-serif);font-style:italic;color:var(--brass)}
+.preface .pf{margin:0;color:#C5C8D2;max-width:46ch}
+.preface .pf::first-letter{font:400 3.4em/.8 var(--f-serif);float:left;margin:6px 10px 0 0;color:var(--brass)}
+.preface .foot2{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.preface .swap{animation:pin .6s cubic-bezier(.16,1,.3,1)}
+@keyframes pin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.preface .note{font:500 10px/1.5 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:#596079}
+.langs{display:flex;gap:8px}
+.langs span{font:500 11px/1 var(--f-mono);letter-spacing:.14em;border:1px solid var(--ink-3);padding:7px 9px;color:var(--muted)}
+
+/* CONVITE */
+.invite{padding-block:clamp(100px,13vw,170px);position:relative;overflow:hidden}
+.invite::before{content:"";position:absolute;width:900px;height:900px;left:50%;top:-30%;transform:translateX(-50%);background:radial-gradient(circle,rgba(217,178,111,.16),transparent 62%);pointer-events:none}
+.inv-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:start}
+@media (max-width:900px){.inv-grid{grid-template-columns:1fr}}
+.inv-grid h2{margin:16px 0 22px;font:800 clamp(52px,7.5vw,116px)/.86 var(--f-display);font-stretch:62%;text-transform:uppercase}
+.inv-grid h2 em{display:block;font:400 .6em/1.1 var(--f-serif);font-style:italic;text-transform:none;color:var(--brass)}
+.inv-grid > div > p{color:#C5C8D2;max-width:46ch}
+.form{background:var(--ink-2);border:1px solid var(--ink-3);padding:clamp(24px,3vw,40px);display:grid;gap:20px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:520px){.form .row{grid-template-columns:1fr}}
+.field{display:grid;gap:8px;min-width:0}
+.field label{font:500 11px/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select{width:100%;background:var(--ink);border:1px solid var(--ink-3);color:var(--fg);padding:14px;font:15px var(--f-body);border-radius:0;appearance:none}
+.field input:focus,.field select:focus{outline:none;border-color:var(--brass)}
+.types{display:flex;flex-wrap:wrap;gap:8px}
+.types input{position:absolute;opacity:0;pointer-events:none}
+.types label{font:500 13px/1 var(--f-body);letter-spacing:0;text-transform:none;color:var(--fg);border:1px solid var(--ink-3);padding:11px 14px;cursor:pointer;transition:.2s}
+.types input:checked + label{background:var(--brass);color:var(--ink);border-color:var(--brass)}
+.types input:focus-visible + label{outline:2px solid var(--brass);outline-offset:2px}
+.preview{font:13px/1.6 var(--f-mono);color:#B5BACA;background:var(--ink);border:1px dashed var(--ink-3);padding:16px;white-space:pre-wrap;min-height:90px}
+.preview b{color:var(--brass);font-weight:500}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.socials.sm{margin-top:0}
+.soc{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg);border:1px solid var(--ink-3);padding:12px 16px;font:600 12px/1 var(--f-body);letter-spacing:.1em;text-transform:uppercase;transition:.25s;background:rgba(8,11,20,.4)}
+.soc svg{width:20px;height:20px;flex:none;color:var(--brass);transition:color .25s}
+.soc:hover{border-color:var(--brass);background:var(--brass);color:var(--ink)}
+.soc:hover svg{color:var(--ink)}
+.socials.sm .soc{padding:0;width:44px;height:44px;justify-content:center;border-radius:50%}
+.socials.sm .soc span{display:none}
+.foot-r{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.support{font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.support:hover{color:var(--brass)}
+.copied{font:500 11px/1.4 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--brass);text-align:center;min-height:1.4em}
+.alt{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px}
+.alt div{font-size:14px;color:var(--muted)}
+.alt strong{display:block;font:500 11px/1 var(--f-mono);letter-spacing:.16em;color:var(--brass);text-transform:uppercase;margin-bottom:8px}
+
+/* FOOTER */
+footer{border-top:1px solid var(--ink-3);padding-block:0 40px}
+.mmw{position:relative;width:100%;height:clamp(300px,52vw,640px);overflow:hidden;background:#080B14;margin-bottom:48px;cursor:crosshair;touch-action:pan-y}
+.mmw canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.fname{font:700 22px/1.1 var(--f-display);font-stretch:80%;text-transform:uppercase;letter-spacing:.04em}
+.fname small{display:block;margin-top:6px;font:500 11px/1 var(--f-mono);letter-spacing:.14em;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-end}
+.foot .big{font:800 clamp(56px,13vw,200px)/.8 var(--f-display);font-stretch:62%;text-transform:uppercase;color:transparent;-webkit-text-stroke:1px #2B3350;letter-spacing:-.01em}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;gap:22px;flex-wrap:wrap}
+.foot a{font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.foot a:hover{color:var(--brass)}
+.legal{margin-top:36px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font:12px var(--f-mono);color:#596079}
+
+/* proto badge */
+.proto{justify-self:start;font:500 10px/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;background:var(--ink);border:1px dashed var(--ink-3);color:var(--muted);padding:10px 12px}
+.credit{margin-top:28px;padding-top:24px;border-top:1px solid var(--ink-3);display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;font:12px/1.6 var(--f-mono);color:#7A8197}
+.credit b{color:var(--fg);font-weight:500}
+.credit a{color:var(--brass);text-decoration:underline;text-underline-offset:3px;font:inherit;letter-spacing:0;text-transform:none}
+.credit .mail{user-select:all}
+.proto b{color:var(--ember);font-weight:500}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="mark" href="#inicio" aria-label="David Rebollo, início"><img class="fire" src="fire.png" alt=""><span>DAVID REBOLLO</span></a>
+    <ul class="links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#trajetoria">Trajetória</a></li>
+      <li><a href="#frentes" data-p="0">Ministério</a></li>
+      <li><a href="#frentes" data-p="1">Escolas DR</a></li>
+      <li><a href="#livros">Livros</a></li>
+      <li><a href="#frentes" data-p="2">Business</a></li>
+    </ul>
+    <div class="navr"><div class="flags" role="group" aria-label="Idioma"><button type="button" id="lang-pt" data-lang="pt" aria-pressed="true" title="Português" aria-label="Português"><svg viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#009C3B"/><path d="M13 4.5 23 13 13 21.5 3 13z" fill="#FFDF00"/><circle cx="13" cy="13" r="5" fill="#002776"/><path d="M8.3 12.2c3-1 6.6-.7 9.3.9" stroke="#fff" stroke-width=".9" fill="none"/></svg></button><button type="button" id="lang-en" data-lang="en" aria-pressed="false" title="English" aria-label="English"><svg viewBox="0 0 26 26" aria-hidden="true"><defs><clipPath id="cu"><circle cx="13" cy="13" r="13"/></clipPath></defs><g clip-path="url(#cu)"><rect width="26" height="26" fill="#fff"/><g fill="#B22234"><rect y="0" width="26" height="2"/><rect y="4" width="26" height="2"/><rect y="8" width="26" height="2"/><rect y="12" width="26" height="2"/><rect y="16" width="26" height="2"/><rect y="20" width="26" height="2"/><rect y="24" width="26" height="2"/></g><rect width="13" height="14" fill="#3C3B6E"/><g fill="#fff"><circle cx="3" cy="3" r=".8"/><circle cx="7" cy="3" r=".8"/><circle cx="11" cy="3" r=".8"/><circle cx="5" cy="6.5" r=".8"/><circle cx="9" cy="6.5" r=".8"/><circle cx="3" cy="10" r=".8"/><circle cx="7" cy="10" r=".8"/><circle cx="11" cy="10" r=".8"/></g></g></svg></button><button type="button" id="lang-es" data-lang="es" aria-pressed="false" title="Español" aria-label="Español"><svg viewBox="0 0 26 26" aria-hidden="true"><defs><clipPath id="ce"><circle cx="13" cy="13" r="13"/></clipPath></defs><g clip-path="url(#ce)"><rect width="26" height="26" fill="#AA151B"/><rect y="6.5" width="26" height="13" fill="#F1BF00"/><rect x="6" y="10" width="3.2" height="5" rx=".6" fill="#AA151B"/></g></svg></button></div>
+    <a class="nav-cta" href="#convite">Convidar</a></div>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-media">
+    <canvas id="rays" aria-hidden="true"></canvas>
+    <video id="heroVideo" src="hero.mp4" poster="hero.jpg" muted loop playsinline autoplay preload="auto" aria-label="David Rebollo ministrando na Escola Profética Sobrenatural"></video>
+  </div>
+  <div class="grain"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-top">
+      <div class="roles"><span>Mestre</span><i>/</i><span>Profeta</span><i>/</i><span>Apóstolo</span><i>/</i><span>Conferencista</span><i>/</i><span>Escritor</span><i>/</i><span>Empresário</span></div>
+      <p class="hero-claim serif">Presença e revelação <b>para as nações.</b></p>
+    </div>
+    <h1><span class="l"><span>David</span></span><span class="l"><span>Rebollo</span></span></h1>
+    <div class="hero-bar">
+      <div class="ctas">
+        <a class="btn fill" href="#convite">Convidar para ministrar
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <a class="btn" href="#trajetoria">Conhecer a trajetória</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span class="grp"><b>Presença ministerial internacional</b> <i>levando ensinamentos, formação e capacitação</i> <b>a diferentes nações</b></span>
+    <span class="grp"><b>Presença ministerial internacional</b> <i>levando ensinamentos, formação e capacitação</i> <b>a diferentes nações</b></span>
+  </div>
+</div>
+
+<section class="manifesto" id="sobre">
+  <canvas id="neuro" aria-hidden="true"></canvas><div class="neuro-veil" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="eyebrow">Missão · Manifesto</span>
+    <p class="lit" id="lit">Edificar o <span class="gold">Reino</span> dos céus em <span class="it">todas</span> as <span class="gold">nações.</span></p>
+    <div class="mv">
+      <div><span class="eyebrow">Visão</span><h3>Transformar e empoderar com presença e revelação.</h3></div>
+      <div><span class="eyebrow">Chamado</span><h3>Um ministério magisterial, avivalista e inspiracional, com raízes no Uruguai e voz em toda a América Latina.</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="journey" id="trajetoria">
+  <div class="wrap j-grid">
+    <figure class="portrait" style="margin:0">
+      <img src="portrait.jpg" alt="David Rebollo com o braço erguido na Escola Profética Sobrenatural">
+      <figcaption>Escola Profética Sobrenatural · Ventos do Espírito</figcaption>
+    </figure>
+    <div>
+      <div class="j-head">
+        <span class="eyebrow">Trajetória</span>
+        <h2>Do chamado <em>às nações</em></h2>
+        <p>Nascido no Uruguai, David Rebollo é conferencista, escritor, empresário e consultor de empresas. Há décadas dedica a vida a formar líderes e a levar uma mensagem de presença, santidade e revelação a igrejas de vários países.</p>
+      </div>
+      <ol class="steps" id="steps">
+        <li><span class="when">Aos 14 anos</span><h4>O encontro</h4><p>Uma experiência pessoal com Jesus muda o rumo da sua vida. Pouco depois, recebe o chamado ao ministério.</p></li>
+        <li><span class="when">Juventude</span><h4>A Palavra como base</h4><p>Começa cedo o estudo das Escrituras e passa a atuar em libertação e no enchimento do Espírito Santo.</p></li>
+        <li><span class="when">Escolas DR</span><h4>Formar quem forma</h4><p>Cria um sistema de escolas e seminários de ativação para líderes e cristãos maduros. Hoje são 20 escolas disponíveis.</p></li>
+        <li><span class="when">Livros</span><h4>A mensagem em páginas</h4><p>Publica obras como Dimensões do Espírito e Dimensões da Prosperidade, com edições em português e inglês.</p></li>
+        <li><span class="when">Chile</span><h4>R.E.S.E.T. e os negócios</h4><p>Desenvolve a metodologia R.E.S.E.T., que dá origem a uma rede de negócios e exportações, e funda a DR Business.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="padding-block:0">
+  <div class="stats" id="stats">
+    <div class="stat"><span class="n" data-to="15000">15.000</span><p>Participantes por ano em cursos presenciais</p></div>
+    <div class="stat"><span class="n" data-to="20">20</span><p>Escolas DR disponíveis para igrejas</p></div>
+    <div class="stat"><span class="n" data-to="5">5<sup>+</sup></span><p>Livros publicados pela Editora Dabar</p></div>
+    <div class="stat"><span class="n">PT·EN</span><p>Obras traduzidas para português e inglês</p></div>
+  </div>
+</div>
+
+<section class="voice" aria-label="Palavra">
+  <div class="v-grid">
+    <div class="v-photo"><img src="quote.jpg" alt="David Rebollo ministrando, apontando para o público"></div>
+    <div class="v-text">
+      <div class="qmark" aria-hidden="true">“</div>
+      <blockquote>Existe um propósito profético que <b>não será desbloqueado</b> por orações passivas de lamento.</blockquote>
+      <cite><span>Ap. David Rebollo</span> · @dr.davidrebollo</cite>
+    </div>
+  </div>
+</section>
+
+<section class="fronts" id="frentes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Três frentes, uma mensagem</span><h2>Onde a palavra vira obra</h2></div>
+      <p>Passe o cursor ou toque em cada frente. O ministério vem primeiro; escolas e negócios nascem dele.</p>
+    </div>
+    <div class="panels" id="panels">
+      <div class="panel open" tabindex="0" data-art="0">
+        <img class="ph" src="p-min.jpg" alt="" style="object-position:30% 40%"><canvas></canvas><span class="num">I · Ministério</span>
+        <h3>Conferências</h3>
+        <div class="body"><p>Ministrações, conferências e congressos para igrejas e redes em vários países, com ênfase em presença, santidade e revelação.</p>
+          <div class="chip"><span>Conferências</span><span>Congressos</span><span>Ativação profética</span></div>
+          <a class="link" href="#convite">Convide David para sua igreja</a></div>
+      </div>
+      <div class="panel" tabindex="0" data-art="1">
+        <img class="ph" src="p-esc.jpg" alt="" style="object-position:45% 40%"><canvas></canvas><span class="num">II · Formação</span>
+        <h3>Escolas DR</h3>
+        <div class="body"><p>Capacitação para líderes e cristãos maduros: seminários de ativação e treinamentos baseados nos livros. Sua igreja pode receber uma escola.</p>
+          <div class="chip"><span>20 escolas</span><span>Líderes</span><span>Seminários</span></div>
+          <a class="link" href="#convite">Solicitar uma escola</a></div>
+      </div>
+      <div class="panel" tabindex="0" data-art="2">
+        <img class="ph" src="p-biz.jpg" alt="" style="object-position:62% 30%"><canvas></canvas><span class="num">III · Negócios</span>
+        <h3>DR Business</h3>
+        <div class="body"><p>Escola de negócios e consultoria com a metodologia R.E.S.E.T., que já gerou uma rede de negócios e exportações no Chile.</p>
+          <div class="chip"><span>R.E.S.E.T.</span><span>Consultoria</span><span>Mercado imobiliário</span></div>
+          <a class="link" href="#convite">Conhecer o trabalho empresarial</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="books" id="livros">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Biblioteca</span><h2>Leitura que transforma</h2></div>
+      <p>Os livros giram em torno da chama. Clique em um deles para ler o prefácio e seguir direto para a Editora Dabar.</p>
+    </div>
+    <div class="o-grid">
+      <div class="orbit" id="orbit">
+        <div class="ring3" id="ring3">
+        <div class="floor3"></div>
+        <div class="sun" id="sun"><img src="fire.png" alt=""></div>
+        <button class="ob" type="button" data-i="0"><img class="mock" src="book1.png" alt="Capa de Corpos Transmissores de Glória"><span class="tip">Corpos Transmissores</span></button>
+        <button class="ob" type="button" data-i="1"><img class="mock" src="book2.png" alt="Capa de Dimensões do Espírito"><span class="tip">Dimensões do Espírito</span></button>
+        <button class="ob" type="button" data-i="2"><img class="mock" src="book3.png" alt="Capa de Dimensão de Prosperidade"><span class="tip">Dimensão de Prosperidade</span></button>
+        <button class="ob" type="button" data-i="3"><img class="mock" src="book4.png" alt="Capa de Paternidade: Filhos de Honra"><span class="tip">Paternidade</span></button>
+        <button class="ob" type="button" data-i="4"><img class="mock" src="book5.png" alt="Capa de Protocolo de Lilith"><span class="tip">Protocolo de Lilith</span></button>
+        </div>
+      </div>
+      <article class="preface" id="preface" aria-live="polite">
+        <div class="swap" id="pfBody">
+          <div class="k"><span class="eyebrow" id="pfEy">Prefácio</span><span class="idx" id="pfIdx">01 / 05</span></div>
+          <h3 id="pfTitle" style="margin-top:18px">Corpos Transmissores de Glória</h3>
+          <p class="sub" id="pfSub"></p>
+          <p class="pf" id="pfText" style="margin-top:18px"></p>
+          <div class="tags" id="pfTags" style="margin-top:18px"></div>
+        </div>
+        <div class="foot2">
+          <div class="langs"><span>PT</span><span>EN</span></div>
+          <a class="btn fill" href="https://www.editoradabar.com.br/" id="pfBuy" target="_blank" rel="noopener">Adquirir na Dabar</a>
+        </div>
+        <span class="note" id="pfNote"></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="invite" id="convite">
+  <div class="wrap inv-grid">
+    <div>
+      <span class="eyebrow">Convites e agenda</span>
+      <h2>Leve David <em>à sua igreja</em></h2>
+      <p>Conferências, escolas, treinamentos e parcerias. Responda três perguntas e a mensagem fica pronta. Um clique copia o texto e abre o Direct do Instagram do David.</p>
+      <div class="socials">
+        <a class="soc" data-net="instagram" href="https://www.instagram.com/dr.davidrebollo/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+        <a class="soc" data-net="youtube" href="https://www.youtube.com/@drdavidrebollo" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22.5 7.2a2.9 2.9 0 0 0-2-2C18.7 4.7 12 4.7 12 4.7s-6.7 0-8.5.5a2.9 2.9 0 0 0-2 2C1 9 1 12 1 12s0 3 .5 4.8a2.9 2.9 0 0 0 2 2c1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5a2.9 2.9 0 0 0 2-2C23 15 23 12 23 12s0-3-.5-4.8ZM9.8 15.3V8.7l5.7 3.3-5.7 3.3Z"/></svg><span>YouTube</span></a>
+        <a class="soc" data-net="tiktok" href="https://www.tiktok.com/@davidrebollo.business" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 2h-3.3v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.2a6.3 6.3 0 1 0 5.3 6.2V8.6a8 8 0 0 0 4.7 1.5V6.8a4.7 4.7 0 0 1-4.7-4.8Z"/></svg><span>TikTok</span></a>
+        <a class="soc" data-net="facebook" href="https://www.facebook.com/share/1CHQBBVgdv/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V22h3.4Z"/></svg><span>Facebook</span></a>
+      </div>
+    </div>
+    <form class="form" id="inviteForm" novalidate>
+      <div class="proto"><b>●</b> Protótipo · dados de exemplo no formulário</div>
+      <div class="field"><label>Tipo de convite</label>
+        <div class="types">
+          <input type="radio" name="tipo" id="t1" value="Conferência" checked><label for="t1">Conferência</label>
+          <input type="radio" name="tipo" id="t2" value="Escola DR"><label for="t2">Escola DR</label>
+          <input type="radio" name="tipo" id="t3" value="Treinamento de líderes"><label for="t3">Treinamento</label>
+          <input type="radio" name="tipo" id="t4" value="DR Business"><label for="t4">Business</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="igreja">Igreja ou organização</label><input id="igreja" value="Igreja Monte Sião"></div>
+        <div class="field"><label for="cidade">Cidade / país</label><input id="cidade" value="Curitiba, Brasil"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="data">Data desejada</label><input id="data" value="Março de 2027"></div>
+        <div class="field"><label for="publico">Público esperado</label><select id="publico"><option>Até 200 pessoas</option><option selected>200 a 1.000 pessoas</option><option>Mais de 1.000 pessoas</option></select></div>
+      </div>
+      <div class="field"><label>Mensagem que será enviada</label><div class="preview" id="preview"></div></div>
+      <a class="btn fill" id="waBtn" href="https://ig.me/m/dr.davidrebollo" target="_blank" rel="noopener" style="justify-content:center">Copiar e enviar no Instagram
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <p class="copied" id="copied" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="mmw" id="mmw"><canvas aria-hidden="true"></canvas><span class="sr">Rebollo</span></div>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand"><img class="fire" src="fire.png" alt=""><div class="fname">David Rebollo<small>DR Ministry To The Nations</small></div></div>
+      <div class="foot-r"><div class="socials sm">
+        <a class="soc" data-net="instagram" href="https://www.instagram.com/dr.davidrebollo/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+        <a class="soc" data-net="youtube" href="https://www.youtube.com/@drdavidrebollo" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22.5 7.2a2.9 2.9 0 0 0-2-2C18.7 4.7 12 4.7 12 4.7s-6.7 0-8.5.5a2.9 2.9 0 0 0-2 2C1 9 1 12 1 12s0 3 .5 4.8a2.9 2.9 0 0 0 2 2c1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5a2.9 2.9 0 0 0 2-2C23 15 23 12 23 12s0-3-.5-4.8ZM9.8 15.3V8.7l5.7 3.3-5.7 3.3Z"/></svg><span>YouTube</span></a>
+        <a class="soc" data-net="tiktok" href="https://www.tiktok.com/@davidrebollo.business" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 2h-3.3v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.2a6.3 6.3 0 1 0 5.3 6.2V8.6a8 8 0 0 0 4.7 1.5V6.8a4.7 4.7 0 0 1-4.7-4.8Z"/></svg><span>TikTok</span></a>
+        <a class="soc" data-net="facebook" href="https://www.facebook.com/share/1CHQBBVgdv/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V22h3.4Z"/></svg><span>Facebook</span></a>
+      </div><a class="support" href="#convite">Apoiar o ministério</a></div>
+    </div>
+    <div class="legal"><span>© 2026 David Rebollo · DR Ministry To The Nations</span><span>CNPJ 37.565.107/0001-97</span></div>
+    <div class="credit"><span>Site criado por <b>Bruno Corvino</b></span><span class="sep">·</span><span>Para saber mais, <a href="mailto:brunocorvino@gmail.com">clique aqui</a></span><span class="sep">·</span><span class="mail">brunocorvino@gmail.com</span></div>
+  </div>
+</footer>
+
+<script>
+/* ===== i18n: PT (original) · EN · ES ===== */
+window.LANG='pt';
+window.I18N={
+en:{"Sobre":"About","Trajetória":"Journey","Ministério":"Ministry","Escolas DR":"DR Schools","Livros":"Books","Convidar":"Invite","Mestre":"Teacher","Profeta":"Prophet","Apóstolo":"Apostle","Conferencista":"Speaker","Escritor":"Author","Empresário":"Entrepreneur","Presença e revelação":"Presence and revelation","para as nações.":"for the nations.","Convidar para ministrar":"Invite David to minister","Conhecer a trajetória":"Explore his journey","Uruguai":"Uruguay","Brasil":"Brazil","América Latina":"Latin America","Português":"Português","Missão · Manifesto":"Mission · Manifesto","Visão":"Vision","Transformar e empoderar com presença e revelação.":"To transform and empower through presence and revelation.","Chamado":"Calling","Um ministério magisterial, avivalista e inspiracional, com raízes no Uruguai e voz em toda a América Latina.":"A teaching, revivalist and inspirational ministry, rooted in Uruguay with a voice across Latin America.","Escola Profética Sobrenatural · Ventos do Espírito":"Supernatural Prophetic School · Winds of the Spirit","Do chamado":"From the calling","às nações":"to the nations","Nascido no Uruguai, David Rebollo é conferencista, escritor, empresário e consultor de empresas. Há décadas dedica a vida a formar líderes e a levar uma mensagem de presença, santidade e revelação a igrejas de vários países.":"Born in Uruguay, David Rebollo is a speaker, author, entrepreneur and business consultant. For decades he has devoted his life to training leaders and carrying a message of presence, holiness and revelation to churches in many countries.","Aos 14 anos":"At age 14","O encontro":"The encounter","Uma experiência pessoal com Jesus muda o rumo da sua vida. Pouco depois, recebe o chamado ao ministério.":"A personal encounter with Jesus changes the course of his life. Soon after, he receives the call to ministry.","Juventude":"Youth","A Palavra como base":"The Word as foundation","Começa cedo o estudo das Escrituras e passa a atuar em libertação e no enchimento do Espírito Santo.":"He begins studying the Scriptures early and starts ministering in deliverance and the infilling of the Holy Spirit.","Formar quem forma":"Training those who train","Cria um sistema de escolas e seminários de ativação para líderes e cristãos maduros. Hoje são 20 escolas disponíveis.":"He builds a system of schools and activation seminars for leaders and mature Christians. Today 20 schools are available.","A mensagem em páginas":"The message in print","Publica obras como Dimensões do Espírito e Dimensões da Prosperidade, com edições em português e inglês.":"He publishes books such as Dimensões do Espírito and Dimensão de Prosperidade, with editions in Portuguese and English.","R.E.S.E.T. e os negócios":"R.E.S.E.T. and business","Desenvolve a metodologia R.E.S.E.T., que dá origem a uma rede de negócios e exportações, e funda a DR Business.":"He develops the R.E.S.E.T. methodology, which gives rise to a network of businesses and exports, and founds DR Business.","15.000":"15,000","Participantes por ano em cursos presenciais":"In-person participants every year","Escolas DR disponíveis para igrejas":"DR Schools available to churches","Livros publicados pela Editora Dabar":"Books published by Editora Dabar","Obras traduzidas para português e inglês":"Titles available in Portuguese and English","Existe um propósito profético que":"There is a prophetic purpose that","não será desbloqueado":"will not be unlocked","por orações passivas de lamento.":"by passive prayers of lament.","Três frentes, uma mensagem":"Three fronts, one message","Onde a palavra vira obra":"Where the Word becomes work","Passe o cursor ou toque em cada frente. O ministério vem primeiro; escolas e negócios nascem dele.":"Hover or tap each front. Ministry comes first; schools and business grow out of it.","I · Ministério":"I · Ministry","Conferências":"Conferences","Ministrações, conferências e congressos para igrejas e redes em vários países, com ênfase em presença, santidade e revelação.":"Ministry, conferences and congresses for churches and networks in many countries, with an emphasis on presence, holiness and revelation.","Congressos":"Congresses","Ativação profética":"Prophetic activation","Convide David para sua igreja":"Invite David to your church","II · Formação":"II · Training","Capacitação para líderes e cristãos maduros: seminários de ativação e treinamentos baseados nos livros. Sua igreja pode receber uma escola.":"Training for leaders and mature Christians: activation seminars and courses based on the books. Your church can host a school.","20 escolas":"20 schools","Líderes":"Leaders","Seminários":"Seminars","Solicitar uma escola":"Request a school","III · Negócios":"III · Business","Escola de negócios e consultoria com a metodologia R.E.S.E.T., que já gerou uma rede de negócios e exportações no Chile.":"A business school and consultancy built on the R.E.S.E.T. methodology, which has already created a network of businesses and exports in Chile.","Consultoria":"Consulting","Mercado imobiliário":"Real estate","Conhecer o trabalho empresarial":"Explore the business work","Biblioteca":"Library","Leitura que transforma":"Books that transform","Os livros giram em torno da chama. Clique em um deles para ler o prefácio e seguir direto para a Editora Dabar.":"The books orbit the flame. Click one to read its preface and go straight to Editora Dabar.","Adquirir na Dabar":"Buy at Dabar","Prefácio":"Preface","Convites e agenda":"Invitations and schedule","Leve David":"Bring David","à sua igreja":"to your church","Conferências, escolas, treinamentos e parcerias. Responda três perguntas e a mensagem fica pronta. Um clique copia o texto e abre o Direct do Instagram do David.":"Conferences, schools, training and partnerships. Answer three questions and the message is ready. One click copies it and opens David's Instagram Direct.","Redes":"Social","Tipo de convite":"Type of invitation","Conferência":"Conference","Escola DR":"DR School","Treinamento":"Training","Treinamento de líderes":"Leadership training","Igreja ou organização":"Church or organization","Cidade / país":"City / country","Data desejada":"Preferred date","Público esperado":"Expected audience","Até 200 pessoas":"Up to 200 people","200 a 1.000 pessoas":"200 to 1,000 people","Mais de 1.000 pessoas":"More than 1,000 people","Mensagem que será enviada":"Message that will be sent","Enviar pelo WhatsApp":"Send via WhatsApp","Apoiar o ministério":"Support the ministry","Protótipo · dados de exemplo no formulário":"Prototype · sample data in the form","Site criado por":"Website by","Para saber mais,":"To learn more,","clique aqui":"click here","David Rebollo, início":"David Rebollo, home","David Rebollo ministrando na Escola Profética Sobrenatural":"David Rebollo ministering at the Supernatural Prophetic School","David Rebollo com o braço erguido na Escola Profética Sobrenatural":"David Rebollo with his arm raised at the Supernatural Prophetic School","Palavra":"Word","David Rebollo ministrando, apontando para o público":"David Rebollo ministering, pointing at the audience","Curitiba, Brasil":"Curitiba, Brazil","Igreja Monte Sião":"Mount Zion Church","Março de 2027":"March 2027","Texto da contracapa":"Back cover text","Idioma":"Language","Presença ministerial internacional":"International ministry presence","levando ensinamentos, formação e capacitação":"bringing teaching, formation and training","a diferentes nações":"to the nations","Copiar e enviar no Instagram":"Copy and send on Instagram","Mensagem copiada. Cole no Direct do Instagram.":"Message copied. Paste it in Instagram Direct."},
+es:{"Sobre":"Sobre mí","Trajetória":"Trayectoria","Ministério":"Ministerio","Escolas DR":"Escuelas DR","Livros":"Libros","Convidar":"Invitar","Mestre":"Maestro","Profeta":"Profeta","Apóstolo":"Apóstol","Conferencista":"Conferencista","Escritor":"Escritor","Empresário":"Empresario","Presença e revelação":"Presencia y revelación","para as nações.":"para las naciones.","Convidar para ministrar":"Invitar a ministrar","Conhecer a trajetória":"Conocer la trayectoria","Uruguai":"Uruguay","Brasil":"Brasil","América Latina":"América Latina","Missão · Manifesto":"Misión · Manifiesto","Visão":"Visión","Transformar e empoderar com presença e revelação.":"Transformar y empoderar con presencia y revelación.","Chamado":"Llamado","Um ministério magisterial, avivalista e inspiracional, com raízes no Uruguai e voz em toda a América Latina.":"Un ministerio magisterial, avivalista e inspiracional, con raíces en Uruguay y voz en toda América Latina.","Escola Profética Sobrenatural · Ventos do Espírito":"Escuela Profética Sobrenatural · Vientos del Espíritu","Do chamado":"Del llamado","às nações":"a las naciones","Nascido no Uruguai, David Rebollo é conferencista, escritor, empresário e consultor de empresas. Há décadas dedica a vida a formar líderes e a levar uma mensagem de presença, santidade e revelação a igrejas de vários países.":"Nacido en Uruguay, David Rebollo es conferencista, escritor, empresario y consultor de empresas. Desde hace décadas dedica su vida a formar líderes y a llevar un mensaje de presencia, santidad y revelación a iglesias de varios países.","Aos 14 anos":"A los 14 años","O encontro":"El encuentro","Uma experiência pessoal com Jesus muda o rumo da sua vida. Pouco depois, recebe o chamado ao ministério.":"Una experiencia personal con Jesús cambia el rumbo de su vida. Poco después, recibe el llamado al ministerio.","Juventude":"Juventud","A Palavra como base":"La Palabra como base","Começa cedo o estudo das Escrituras e passa a atuar em libertação e no enchimento do Espírito Santo.":"Comienza temprano a estudiar las Escrituras y a ministrar en liberación y en la llenura del Espíritu Santo.","Formar quem forma":"Formar a quienes forman","Cria um sistema de escolas e seminários de ativação para líderes e cristãos maduros. Hoje são 20 escolas disponíveis.":"Crea un sistema de escuelas y seminarios de activación para líderes y cristianos maduros. Hoy hay 20 escuelas disponibles.","A mensagem em páginas":"El mensaje en páginas","Publica obras como Dimensões do Espírito e Dimensões da Prosperidade, com edições em português e inglês.":"Publica obras como Dimensões do Espírito y Dimensão de Prosperidade, con ediciones en portugués e inglés.","R.E.S.E.T. e os negócios":"R.E.S.E.T. y los negocios","Desenvolve a metodologia R.E.S.E.T., que dá origem a uma rede de negócios e exportações, e funda a DR Business.":"Desarrolla la metodología R.E.S.E.T., que da origen a una red de negocios y exportaciones, y funda DR Business.","Participantes por ano em cursos presenciais":"Participantes al año en cursos presenciales","Escolas DR disponíveis para igrejas":"Escuelas DR disponibles para iglesias","Livros publicados pela Editora Dabar":"Libros publicados por Editora Dabar","Obras traduzidas para português e inglês":"Obras traducidas al portugués y al inglés","Existe um propósito profético que":"Existe un propósito profético que","não será desbloqueado":"no será desbloqueado","por orações passivas de lamento.":"por oraciones pasivas de lamento.","Três frentes, uma mensagem":"Tres frentes, un mensaje","Onde a palavra vira obra":"Donde la Palabra se hace obra","Passe o cursor ou toque em cada frente. O ministério vem primeiro; escolas e negócios nascem dele.":"Pase el cursor o toque cada frente. El ministerio va primero; las escuelas y los negocios nacen de él.","I · Ministério":"I · Ministerio","Conferências":"Conferencias","Ministrações, conferências e congressos para igrejas e redes em vários países, com ênfase em presença, santidade e revelação.":"Ministraciones, conferencias y congresos para iglesias y redes en varios países, con énfasis en presencia, santidad y revelación.","Congressos":"Congresos","Ativação profética":"Activación profética","Convide David para sua igreja":"Invite a David a su iglesia","II · Formação":"II · Formación","Capacitação para líderes e cristãos maduros: seminários de ativação e treinamentos baseados nos livros. Sua igreja pode receber uma escola.":"Capacitación para líderes y cristianos maduros: seminarios de activación y entrenamientos basados en los libros. Su iglesia puede recibir una escuela.","20 escolas":"20 escuelas","Líderes":"Líderes","Seminários":"Seminarios","Solicitar uma escola":"Solicitar una escuela","III · Negócios":"III · Negocios","Escola de negócios e consultoria com a metodologia R.E.S.E.T., que já gerou uma rede de negócios e exportações no Chile.":"Escuela de negocios y consultoría con la metodología R.E.S.E.T., que ya generó una red de negocios y exportaciones en Chile.","Consultoria":"Consultoría","Mercado imobiliário":"Mercado inmobiliario","Conhecer o trabalho empresarial":"Conocer el trabajo empresarial","Biblioteca":"Biblioteca","Leitura que transforma":"Lectura que transforma","Os livros giram em torno da chama. Clique em um deles para ler o prefácio e seguir direto para a Editora Dabar.":"Los libros giran alrededor de la llama. Haga clic en uno para leer el prefacio e ir directo a Editora Dabar.","Adquirir na Dabar":"Comprar en Dabar","Prefácio":"Prefacio","Convites e agenda":"Invitaciones y agenda","Leve David":"Lleve a David","à sua igreja":"a su iglesia","Conferências, escolas, treinamentos e parcerias. Responda três perguntas e a mensagem fica pronta. Um clique copia o texto e abre o Direct do Instagram do David.":"Conferencias, escuelas, entrenamientos y alianzas. Responda tres preguntas y el mensaje queda listo. Un clic lo copia y abre el Direct de Instagram de David.","E-mail":"Correo","Redes":"Redes","Tipo de convite":"Tipo de invitación","Conferência":"Conferencia","Escola DR":"Escuela DR","Treinamento":"Entrenamiento","Treinamento de líderes":"Entrenamiento de líderes","Igreja ou organização":"Iglesia u organización","Cidade / país":"Ciudad / país","Data desejada":"Fecha deseada","Público esperado":"Público esperado","Até 200 pessoas":"Hasta 200 personas","200 a 1.000 pessoas":"200 a 1.000 personas","Mais de 1.000 pessoas":"Más de 1.000 personas","Mensagem que será enviada":"Mensaje que se enviará","Enviar pelo WhatsApp":"Enviar por WhatsApp","Apoiar o ministério":"Apoyar el ministerio","Protótipo · dados de exemplo no formulário":"Prototipo · datos de ejemplo en el formulario","Site criado por":"Sitio creado por","Para saber mais,":"Para saber más,","clique aqui":"haga clic aquí","David Rebollo, início":"David Rebollo, inicio","David Rebollo ministrando na Escola Profética Sobrenatural":"David Rebollo ministrando en la Escuela Profética Sobrenatural","David Rebollo com o braço erguido na Escola Profética Sobrenatural":"David Rebollo con el brazo en alto en la Escuela Profética Sobrenatural","Palavra":"Palabra","David Rebollo ministrando, apontando para o público":"David Rebollo ministrando, señalando al público","Igreja Monte Sião":"Iglesia Monte Sion","Março de 2027":"Marzo de 2027","Texto da contracapa":"Texto de la contraportada","Idioma":"Idioma","Presença ministerial internacional":"Presencia ministerial internacional","levando ensinamentos, formação e capacitação":"llevando enseñanza, formación y capacitación","a diferentes nações":"a diferentes naciones","Copiar e enviar no Instagram":"Copiar y enviar por Instagram","Mensagem copiada. Cole no Direct do Instagram.":"Mensaje copiado. Péguelo en el Direct de Instagram."}
+};
+window.t=s=>(window.LANG!=='pt'&&I18N[LANG][s])||s;
+</script>
+<script>
+(()=>{
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* NAV state + progress + active link */
+const nav=document.getElementById('nav'),prog=document.getElementById('progress');
+const links=[...document.querySelectorAll('.links a')];
+const onScroll=()=>{
+  const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+  nav.classList.toggle('solid',y>40);
+  prog.style.width=(h>0?y/h*100:0)+'%';
+  litUpdate();stepsUpdate();
+  let cur=null;
+  for(const id of ['sobre','trajetoria','frentes','livros']){const el=document.getElementById(id);if(el.getBoundingClientRect().top<innerHeight*.4)cur=id;}
+  let done=false;links.forEach(a=>{const m=!done&&a.getAttribute('href')==='#'+cur&&(!a.dataset.p||a.dataset.p===String(window.__openP||0));if(m)done=true;a.classList.toggle('on',m)});
+};
+/* Manifesto words */
+const lit=document.getElementById('lit');
+const LIT={pt:lit.innerHTML,en:'Build the <span class="gold">Kingdom</span> of heaven in <span class="it">every</span> <span class="gold">nation.</span>',es:'Edificar el <span class="gold">Reino</span> de los cielos en <span class="it">todas</span> las <span class="gold">naciones.</span>'};
+let words=[];
+function splitLit(){const frag=[];
+lit.childNodes.forEach(n=>{
+  if(n.nodeType===3){n.textContent.split(/(\s+)/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t))frag.push(document.createTextNode(t));else{const s=document.createElement('span');s.className='w';s.textContent=t;frag.push(s);}});}
+  else{n.classList.add('w');frag.push(n);}
+});
+lit.textContent='';frag.forEach(n=>lit.appendChild(n));words=[...lit.querySelectorAll('.w')];}
+splitLit();
+document.addEventListener('langchange',()=>{lit.innerHTML=LIT[LANG]||LIT.pt;splitLit();litUpdate()});
+function litUpdate(){
+  if(reduce){words.forEach(w=>w.classList.add('on'));return}
+  const r=lit.getBoundingClientRect();
+  const p=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(r.height+innerHeight*.35)));
+  const k=Math.round(p*words.length*1.15);
+  words.forEach((w,i)=>w.classList.toggle('on',i<k));
+}
+/* Steps */
+const steps=[...document.querySelectorAll('#steps li')];
+function stepsUpdate(){steps.forEach(s=>s.classList.toggle('seen',s.getBoundingClientRect().top<innerHeight*.7))}
+addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();
+
+/* Counters */
+const fmt=n=>n.toLocaleString(LANG==='en'?'en-US':'pt-BR');
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;io.unobserve(e.target);
+  const el=e.target,to=+el.dataset.to,sup=el.querySelector('sup');if(reduce)return;
+  const t0=performance.now(),d=1600;
+  const tick=t=>{const p=Math.min(1,(t-t0)/d),v=Math.round(to*(1-Math.pow(1-p,4)));el.textContent=fmt(v);if(sup)el.appendChild(sup);if(p<1)requestAnimationFrame(tick)};
+  requestAnimationFrame(tick);
+}),{threshold:.6});
+document.querySelectorAll('.stat .n[data-to]').forEach(n=>io.observe(n));
+
+/* HERO: video if present, else light rays */
+const v=document.getElementById('heroVideo');
+let vidOn=false;v.addEventListener('playing',()=>{vidOn=true});v.play().catch(()=>{});
+const c=document.getElementById('rays'),x=c.getContext('2d');
+let W,H,dpr,motes=[];
+function size(){dpr=Math.min(2,devicePixelRatio||1);W=c.clientWidth;H=c.clientHeight;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);
+  motes=Array.from({length:Math.round(W*H/9000)},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.6+.3,s:Math.random()*.3+.05,a:Math.random()}));}
+size();addEventListener('resize',size);
+let mx=.68,my=.2;
+addEventListener('pointermove',e=>{mx+=((e.clientX/innerWidth*.3+.55)-mx)*.05;});
+function draw(t){
+  x.fillStyle='#080B14';x.fillRect(0,0,W,H);
+  const ox=W*mx,oy=-H*.15;
+  const g=x.createRadialGradient(ox,H*.1,0,ox,H*.1,H*1.1);
+  g.addColorStop(0,'rgba(217,178,111,.28)');g.addColorStop(.4,'rgba(60,70,110,.12)');g.addColorStop(1,'rgba(8,11,20,0)');
+  x.fillStyle=g;x.fillRect(0,0,W,H);
+  x.globalCompositeOperation='lighter';
+  for(let i=0;i<9;i++){
+    const ang=Math.PI/2+(i-4)*.13+Math.sin(t/4000+i)*.04;
+    const len=H*1.6,w=60+40*Math.sin(t/3000+i*1.7);
+    const ex=ox+Math.cos(ang)*len,ey=oy+Math.sin(ang)*len;
+    const lg=x.createLinearGradient(ox,oy,ex,ey);
+    const al=.05+.035*Math.sin(t/2500+i*2.1);
+    lg.addColorStop(0,`rgba(240,205,140,${al*2})`);lg.addColorStop(.6,`rgba(217,178,111,${al})`);lg.addColorStop(1,'rgba(217,178,111,0)');
+    x.fillStyle=lg;x.beginPath();
+    const px=Math.cos(ang+Math.PI/2),py=Math.sin(ang+Math.PI/2);
+    x.moveTo(ox,oy);x.lineTo(ex+px*w*3,ey+py*w*3);x.lineTo(ex-px*w*3,ey-py*w*3);x.closePath();x.fill();
+  }
+  for(const m of motes){m.y-=m.s;m.x+=Math.sin(t/2000+m.a*10)*.15;if(m.y<-5){m.y=H+5;m.x=Math.random()*W}
+    const d=1-Math.min(1,Math.hypot(m.x-ox,m.y-H*.3)/(H*.9));
+    x.fillStyle=`rgba(240,210,150,${(.15+.6*d)*(.5+.5*Math.sin(t/700+m.a*20))})`;x.beginPath();x.arc(m.x,m.y,m.r,0,6.283);x.fill();}
+  x.globalCompositeOperation='source-over';
+  if(!reduce&&!vidOn)requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);
+
+/* Panels */
+const panels=[...document.querySelectorAll('.panel')];
+const open=p=>{panels.forEach(q=>q.classList.toggle('open',q===p));window.__openP=panels.indexOf(p);onScroll()};
+document.querySelectorAll('.links a[data-p]').forEach(a=>a.addEventListener('click',()=>open(panels[+a.dataset.p])));
+panels.forEach(p=>{p.addEventListener('mouseenter',()=>open(p));p.addEventListener('focus',()=>open(p));p.addEventListener('click',()=>open(p));});
+/* panel art: 0 waves of sound, 1 grid of light, 2 rising bars */
+panels.forEach(p=>{
+  const cv=p.querySelector('canvas'),k=cv.getContext('2d'),art=+p.dataset.art;
+  function fit(){const r=cv.getBoundingClientRect(),d=Math.min(2,devicePixelRatio||1);cv.width=r.width*d;cv.height=r.height*d;k.setTransform(d,0,0,d,0,0);return r}
+  let r=fit();addEventListener('resize',()=>r=fit());
+  new ResizeObserver(()=>r=fit()).observe(cv);
+  function f(t){
+    const w=r.width,h=r.height;k.clearRect(0,0,w,h);
+    if(art===0){for(let j=0;j<14;j++){k.beginPath();k.strokeStyle=`rgba(217,178,111,${.05+j*.018})`;k.lineWidth=1;
+      for(let i=0;i<=w;i+=6){const y=h*.38+Math.sin(i/90+t/1400+j*.35)*(18+j*5)*Math.sin(i/w*Math.PI);i?k.lineTo(i,y+j*6):k.moveTo(i,y+j*6)}k.stroke()}}
+    if(art===1){const s=34;for(let gx=s/2;gx<w;gx+=s)for(let gy=s/2;gy<h*.72;gy+=s){const d=Math.hypot(gx-w*.6,gy-h*.3);const a=.08+.5*Math.max(0,Math.sin(t/900-d/60))*Math.max(0,1-d/(w*.9));k.fillStyle=`rgba(217,178,111,${a})`;k.fillRect(gx-1.5,gy-1.5,3,3)}}
+    if(art===2){const n=Math.floor(w/22);for(let i=0;i<n;i++){const bh=(h*.55)*(.2+.8*(i/n))*(.85+.15*Math.sin(t/800+i));k.fillStyle=`rgba(217,178,111,${.06+.25*(i/n)})`;k.fillRect(i*22+6,h*.72-bh,10,bh)}
+      k.strokeStyle='rgba(226,112,58,.7)';k.lineWidth=1.5;k.beginPath();for(let i=0;i<n;i++){const y=h*.72-(h*.55)*(.2+.8*(i/n))-14;i?k.lineTo(i*22+11,y):k.moveTo(i*22+11,y)}k.stroke()}
+    if(!reduce)requestAnimationFrame(f);
+  }
+  requestAnimationFrame(f);
+});
+
+/* WhatsApp invite builder */
+const form=document.getElementById('inviteForm'),pv=document.getElementById('preview'),wa=document.getElementById('waBtn');
+function build(){
+  const tipo=form.querySelector('input[name=tipo]:checked').value;
+  const ig=document.getElementById('igreja').value||'—',ci=document.getElementById('cidade').value||'—',pb=document.getElementById('publico').selectedOptions[0].textContent;
+  const L={pt:['Olá, David! Gostaríamos de convidar você para','Igreja','Cidade','Data','Público','a definir'],en:['Hello, David! We would like to invite you for','Church','City','Date','Audience','to be defined'],es:['¡Hola, David! Nos gustaría invitarle para','Iglesia','Ciudad','Fecha','Público','a definir']}[LANG];
+  const dt=document.getElementById('data').value||L[5];
+  const msg=`${L[0]}: ${tipo}.\n${L[1]}: ${ig}\n${L[2]}: ${ci}\n${L[3]}: ${dt}\n${L[4]}: ${pb}`;
+  pv.innerHTML=msg.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/: (.+)/g,': <b>$1</b>');
+  window.__inviteMsg=msg;
+}
+wa.addEventListener('click',()=>{const c=document.getElementById('copied');const ok=()=>c.textContent=t('Mensagem copiada. Cole no Direct do Instagram.');try{navigator.clipboard.writeText(window.__inviteMsg).then(ok,ok)}catch(_){ok()}});
+form.addEventListener('input',build);form.addEventListener('submit',e=>e.preventDefault());document.addEventListener('langchange',build);build();
+})();
+/* Orbital library */
+(()=>{
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const B=[
+ {en:{"s": "Guardians of the sacred codes", "p": "Designed to lead you into the supernatural experience of living daily under an open heaven and taking the position the angels long for: becoming a guardian of the Eternal's sacred codes. A manual for restoring the true purpose of the body, leading you to experience the glory of God as you never imagined.", "tags": ["Bodily anointing", "Anointed DNA", "Prophetic language"]},es:{"s": "Protectores de los códigos sagrados", "p": "Diseñado para llevarle a la experiencia sobrenatural de vivir cada día con el cielo abierto y ocupar la posición que los ángeles desean: ser un protector de los códigos sagrados del Eterno. Un manual para restaurar el verdadero propósito del cuerpo, que le llevará a experimentar la gloria de Dios como nunca imaginó.", "tags": ["Unción corporal", "ADN ungido", "Lenguaje profético"]},t:'Corpos Transmissores de Glória',url:'https://www.editoradabar.com.br/livros/corpos-transformados-de-gloria',s:'Protetores dos códigos sagrados',ok:1,isbn:'978-65-01-27150-7',tags:['Unção corporal','DNA ungido','Linguagem profética'],p:'Projetado para levar você à experiência sobrenatural de viver diariamente com o céu aberto e ocupar a posição desejada pelos anjos: ser um protetor dos códigos sagrados do Eterno. Um manual para a restauração do verdadeiro propósito do corpo, que vai levar você a experimentar a glória de Deus como nunca imaginou.'},
+ {en:{"s": "The third kind of prophets", "p": "Discover the supernatural power hidden behind the invisible. This book describes the seven dimensions of the spirit and combines accounts of supernatural experiences with the foundations of Scripture. It is the fruit of God's flow over a prophet's life through the years.", "tags": ["Doors in time", "Dimensional spheres", "Prophetic periscope"]},es:{"s": "El tercer tipo de profetas", "p": "Descubra el poder sobrenatural que se esconde detrás de lo invisible. Este libro describe las siete dimensiones del espíritu y combina historias de experiencias sobrenaturales con fundamentos de las Escrituras. Es el resultado del fluir de Dios sobre la vida de un profeta a lo largo de los años.", "tags": ["Puertas en el tiempo", "Esferas dimensionales", "Periscopio profético"]},t:'Dimensões do Espírito',url:'https://www.editoradabar.com.br/livros/dimensoes-do-espirito-o-terceiro-tipo-de-profetas',s:'O terceiro tipo de profetas',ok:1,isbn:'978-65-01-27132-3',tags:['Portas no tempo','Esferas dimensionais','Periscópio profético'],p:'Descubra o poder sobrenatural que se esconde por trás do invisível. Este livro descreve as sete dimensões do espírito e combina histórias de experiências sobrenaturais com fundamentos das Escrituras. É o resultado do fluir de Deus sobre a vida de um profeta ao longo dos anos.'},
+ {en:{"s": "The treasure house", "p": "You must develop a mindset of production and train your spirit to find the ability to give birth to finances. This generation received the reward of everything their parents achieved, yet is leaving less to the next. It is time to reverse that trend and enter the dimension of prosperity the Scriptures promise, discovering the power hidden in the sacrifices that release the riches of the treasure house.", "tags": ["Finances", "Prophetic", "Business across nations"]},es:{"s": "La casa del tesoro", "p": "Es necesario desarrollar una mentalidad de producción y educar el espíritu para encontrar la habilidad de dar a luz las finanzas. Esta generación recibió la recompensa de todo lo que conquistaron sus padres, pero está dejando menos a la próxima. Es hora de invertir esa tendencia y entrar en la dimensión de la prosperidad que prometen las Escrituras, descubriendo el poder escondido en los sacrificios que entregan las riquezas de la casa del tesoro.", "tags": ["Finanzas", "Profético", "Negocios entre naciones"]},t:'Dimensão de Prosperidade',url:'https://www.editoradabar.com.br/livros/dimensoes-da-prosperidade-a-casa-do-tesouro',s:'A casa do tesouro',ok:1,isbn:'978-65-01-52131-2',tags:['Finanças','Profético','Negócios entre nações'],p:'É necessário desenvolver uma mentalidade de produção e educar o espírito para encontrar a habilidade de dar à luz as finanças. Esta geração recebeu a recompensa de tudo o que foi conquistado por seus pais, mas está deixando menos para a próxima. É hora de inverter essa tendência e entrar na dimensão da prosperidade que as Escrituras prometem, descobrindo o poder escondido nos sacrifícios que entregam as riquezas da casa do tesouro.'},
+ {en:{"s": "Children of honor", "p": "Discipleship requires revelation, knowledge and time. Orphans know about power and strength, but they do not understand the mysteries of fatherhood because they were deprived of honor and inheritance. Be free from orphanhood and dive into the seven fatherhoods of the Spirit: the fatherhood that keeps children from giving up at the first trial and equips them to bear fruit in the most barren land.", "tags": ["Spiritual covering", "Apostolic networks", "Spiritual legacy"]},es:{"s": "Hijos de honra", "p": "El discipulado implica revelación, conocimiento y tiempo. Los huérfanos saben de poder y fuerza, pero no entienden los misterios de la paternidad porque fueron privados de honra y herencia. Sea libre de la orfandad y sumérjase en las siete paternidades del Espíritu: la paternidad que protege a los hijos de rendirse ante la primera adversidad y los arma para producir en las tierras más estériles.", "tags": ["Cobertura espiritual", "Redes apostólicas", "Legado espiritual"]},t:'Paternidade',url:'https://www.editoradabar.com.br/livros/paternidade-filhos-de-honra',s:'Filhos de honra',ok:1,isbn:'978-956-401-772-3',tags:['Cobertura espiritual','Redes apostólicas','Legado espiritual'],p:'Discipulado implica revelação, conhecimento e tempo. Órfãos sabem sobre poder e força, mas não entendem os mistérios da paternidade porque foram privados de honra e herança. Seja livre da orfandade e mergulhe nas sete paternidades do Espírito: a paternidade que protege os filhos de desistir na primeira adversidade e os arma para produzir nas terras mais estéreis.'},
+ {en:{"s": "Freedom of the mind", "p": "The secrets to freedom from mental oppression, cyclical attacks and sexual temptation. You will learn to break the ties of witchcraft, establish cycles of prayer and discover the power of the blood of Jesus to set captives free. A manual for counselors and deliverance leaders, with worksheets for ministry sessions.", "tags": ["Best-seller", "Generational healing", "Cycles of oppression"]},es:{"s": "Liberación de la mente", "p": "Los secretos para la liberación de la opresión mental, los ataques cíclicos y las tentaciones sexuales. Aprenderá a librarse de los lazos de brujería, establecer ciclos de oración y descubrir el poder de la sangre de Jesús para liberar a los cautivos. Un manual para consejeros y líderes de liberación, con fichas para las ministraciones.", "tags": ["Best-seller", "Sanidad genética", "Ciclos de opresión"]},t:'Protocolo de Lilith',url:'https://www.editoradabar.com.br/livros/protocolo-de-lilith',s:'Libertação da mente',ok:1,tags:['Best-seller','Cura genética','Ciclos de opressão'],p:'Os segredos para a libertação da opressão mental, dos ataques cíclicos e das tentações sexuais. Você vai aprender a se livrar dos laços de bruxaria, estabelecer ciclos de oração e descobrir o poder do sangue de Jesus para libertar as prisões. Um manual para conselheiros e líderes de libertação, com fichas para fazer as ministrações.'}
+];
+const orbit=document.getElementById('orbit');if(!orbit)return;
+const obs=[...orbit.querySelectorAll('.ob')],sun=document.getElementById('sun');
+const body=document.getElementById('pfBody');
+let rot=0,target=null,sel=0,last=performance.now(),hover=false,t0=performance.now();
+const n=obs.length,step=Math.PI*2/n;
+const Rr=()=>parseFloat(getComputedStyle(orbit).getPropertyValue('--R'))||300;
+function place(now){
+  const R=Rr(),bt=((now||performance.now())-t0)/1000;
+  obs.forEach((o,i)=>{
+    const a=i*step+rot;const x=Math.sin(a)*R,z=Math.cos(a)*R;const depth=(z/R+1)/2;
+    const bob=reduce?0:Math.sin(bt*1.3+i*1.7)*7;
+    const sc=.82+depth*.2;
+    o.style.transform=`translate3d(${x.toFixed(1)}px,${(bob-(i===sel?14*depth:0)).toFixed(1)}px,${z.toFixed(1)}px) rotateZ(5deg) rotateX(22deg) rotateY(${(-Math.sin(a)*18).toFixed(1)}deg) scale(${sc.toFixed(3)})`;
+    o.style.filter=`brightness(${(.3+depth*.7).toFixed(2)}) saturate(${(.5+depth*.5).toFixed(2)})${depth<.35?` blur(${((.35-depth)*4).toFixed(1)}px)`:''}`;
+    o.style.zIndex=Math.round(depth*100);
+  });
+  sun.style.transform='translate3d(0,-150px,0) rotateZ(5deg) rotateX(22deg)';sun.style.zIndex=50;
+}
+function show(i){
+  sel=i;obs.forEach((o,j)=>o.classList.toggle('sel',j===i));
+  const b0=B[i],b=Object.assign({},b0,b0[LANG]||{});
+  document.getElementById('pfEy').textContent=t('Prefácio');
+  document.getElementById('pfIdx').textContent=String(i+1).padStart(2,'0')+' / '+String(n).padStart(2,'0');
+  document.getElementById('pfTitle').textContent=b.t;
+  const sub=document.getElementById('pfSub');sub.textContent=b.s;sub.hidden=!b.s;
+  document.getElementById('pfText').textContent=b.p;
+  const buy=document.getElementById('pfBuy');buy.href=b.url||'https://www.editoradabar.com.br/';
+  const tg=document.getElementById('pfTags');tg.innerHTML='';(b.tags||[]).forEach(x=>{const e=document.createElement('span');e.textContent=x;tg.appendChild(e)});tg.hidden=!b.tags;
+  document.getElementById('pfNote').textContent=b.ok?t('Texto da contracapa')+(b.isbn?' · ISBN '+b.isbn:''):'Texto provisório · aguardando a contracapa';
+  body.classList.remove('swap');void body.offsetWidth;body.classList.add('swap');
+  // bring to front: rot + i*step == 0 (mod 2PI)
+  let tt=-i*step;while(tt-rot>Math.PI)tt-=Math.PI*2;while(tt-rot<-Math.PI)tt+=Math.PI*2;target=tt;
+}
+obs.forEach((o,i)=>o.addEventListener('click',()=>show(i)));
+document.addEventListener('langchange',()=>{const r0=rot;show(sel);target=null;rot=r0});
+orbit.addEventListener('mouseenter',()=>hover=true);orbit.addEventListener('mouseleave',()=>hover=false);
+function tick(now){
+  const dt=Math.min(50,now-last);last=now;
+  if(target!==null){rot+=(target-rot)*Math.min(1,dt/180);if(Math.abs(target-rot)<.002){rot=target;target=null;idle=now}}
+  else if(!hover&&!reduce&&now-idle>5000)rot-=dt*.00016;
+  place(now);requestAnimationFrame(tick);
+}
+let idle=performance.now();
+show(0);rot=target;target=null;place();
+if(!reduce)requestAnimationFrame(tick);else addEventListener('resize',place);
+if(reduce)obs.forEach((o,i)=>o.addEventListener('click',()=>{rot=target;target=null;place()}));
+})();
+</script>
+<script>
+(()=>{
+const SKIP='script,style,#pfBody,#preview,#lit,.flags';
+const nodes=[];const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>{const pe=n.parentElement;if(!pe||pe.closest(SKIP))return 2;return n.textContent.trim()?1:2}});
+let n;while(n=w.nextNode()){const raw=n.textContent;const m=raw.match(/^(\s*)([\s\S]*?)(\s*)$/);nodes.push({n,pre:m[1],key:m[2].replace(/\s+/g,' '),post:m[3]})}
+const attrs=[];document.querySelectorAll('[alt],[aria-label]').forEach(e=>{if(e.closest('.flags'))return;['alt','aria-label'].forEach(a=>{const v=e.getAttribute(a);if(v)attrs.push({e,a,v})})});
+const vals=[...document.querySelectorAll('#inviteForm input[type=text],#inviteForm input:not([type])')].map(e=>({e,v:e.value}));
+const radios=[...document.querySelectorAll('input[name=tipo]')].map(e=>({e,v:e.value}));
+const flags=[...document.querySelectorAll('.flags button')];
+function setLang(l,save){
+  window.LANG=l;document.documentElement.lang=l==='pt'?'pt-BR':l;
+  nodes.forEach(o=>{o.n.textContent=o.pre+t(o.key)+o.post});
+  attrs.forEach(o=>o.e.setAttribute(o.a,t(o.v)));
+  vals.forEach(o=>{if(document.activeElement!==o.e)o.e.value=t(o.v)});
+  radios.forEach(o=>o.e.value=t(o.v));
+  flags.forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l));
+  document.dispatchEvent(new Event('langchange'));
+  if(save){try{localStorage.setItem('dr-lang',l)}catch(_){}}
+}
+flags.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang,true)));
+let saved=null;try{saved=localStorage.getItem('dr-lang')}catch(_){}
+if(saved&&saved!=='pt')setLang(saved);
+})();
+</script>
+<script>
+/* Neuro Noise background — adapted from 21st.dev Shader Builder / Paper Shaders
+   (https://shaders.paper.design/neuro-noise, Apache-2.0). Vanilla WebGL port, warm palette. */
+(()=>{
+const cv=document.getElementById('neuro');if(!cv)return;
+const gl=cv.getContext('webgl',{antialias:false,premultipliedAlpha:false});if(!gl){cv.remove();return}
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const VERT='attribute vec2 a_position;void main(){gl_Position=vec4(a_position,0.0,1.0);}';
+const FRAG=`#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+uniform vec3 u_colors[4];
+uniform vec2 u_res;uniform float u_time;
+const float SCALE=1.26,INTENSITY=0.35,PARAMA=0.28,GRAIN=0.042,SEED=1.0;
+float grainHash(vec2 p){vec3 p3=fract(vec3(p.xyx)*0.1031);p3+=dot(p3,p3.yzx+33.33);return fract((p3.x+p3.y)*p3.z);}
+vec3 palette(float x){float n=3.0;float f=clamp(x,0.0,1.0)*n;vec3 col=u_colors[0];
+ for(int i=0;i<3;i++){col=mix(col,u_colors[i+1],smoothstep(0.0,1.0,clamp(f-float(i),0.0,1.0)));}return col;}
+vec3 shade(vec2 p,float t){vec2 q=p*(1.6+INTENSITY*2.4);float field=0.0;float weight=0.55;
+ for(int i=0;i<6;i++){float fi=float(i);
+  q+=vec2(sin(q.y*(1.7+fi*0.09)+t*(0.35+fi*0.04)+SEED),cos(q.x*(1.5+fi*0.11)-t*(0.28+fi*0.03)))*(0.22+INTENSITY*0.14);
+  float filaments=abs(sin(q.x+q.y+fi*0.72));field+=weight/(0.08+filaments);weight*=0.62;q=q.yx*vec2(-1.08,1.04);}
+ float glow=1.0-exp(-field*(0.018+PARAMA*0.04));return palette(clamp(glow,0.0,1.0));}
+void main(){vec2 uv=gl_FragCoord.xy/u_res;vec2 p=(gl_FragCoord.xy-0.5*u_res)/min(u_res.x,u_res.y);p*=SCALE;
+ vec3 col=shade(p,u_time);
+ float vd=length(uv-0.5)*1.41421356;col*=1.0-0.35*smoothstep(0.35,1.0,vd);
+ col+=(grainHash(gl_FragCoord.xy+vec2(SEED*17.0,SEED*31.0))-0.5)*GRAIN;
+ gl_FragColor=vec4(clamp(col,0.0,1.0),1.0);}`;
+const sh=(t,src)=>{const s=gl.createShader(t);gl.shaderSource(s,src);gl.compileShader(s);return s};
+const pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,VERT));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,FRAG));gl.linkProgram(pr);
+if(!gl.getProgramParameter(pr,gl.LINK_STATUS)){cv.remove();return}
+gl.useProgram(pr);
+const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+const loc=gl.getAttribLocation(pr,'a_position');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+// near-black → deep ember → burnt amber → brass
+const C=[[6,5,7],[64,24,8],[196,104,34],[240,206,140]].map(c=>c.map(v=>v/255)).flat();
+gl.uniform3fv(gl.getUniformLocation(pr,'u_colors'),new Float32Array(C));
+const uRes=gl.getUniformLocation(pr,'u_res'),uT=gl.getUniformLocation(pr,'u_time');
+let raf=0,inView=true;const t0=performance.now();
+function size(){const r=cv.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);let w=Math.round(r.width*d),h=Math.round(r.height*d);const k=Math.min(1,Math.sqrt(2e6/Math.max(1,w*h)));w=Math.max(1,Math.round(w*k));h=Math.max(1,Math.round(h*k));if(cv.width!==w||cv.height!==h){cv.width=w;cv.height=h;gl.viewport(0,0,w,h)}}
+function frame(now){raf=0;size();gl.uniform2f(uRes,cv.width,cv.height);gl.uniform1f(uT,reduce?4:((now-t0)/1000)*0.575);gl.drawArrays(gl.TRIANGLES,0,3);if(!reduce&&inView&&!document.hidden)raf=requestAnimationFrame(frame)}
+new IntersectionObserver(([e])=>{inView=e.isIntersecting;if(inView&&!raf)raf=requestAnimationFrame(frame)}).observe(cv);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&inView&&!raf)raf=requestAnimationFrame(frame)});
+new ResizeObserver(()=>{if(!raf)raf=requestAnimationFrame(frame)}).observe(cv);
+raf=requestAnimationFrame(frame);
+})();
+</script>
+<script>
+/* Murmuration Wordmark — adapted from the 21st.dev component to vanilla JS.
+   Starlings fly a curl-noise current, then converge into the word. Pointer = hawk. */
+(()=>{
+const root=document.getElementById('mmw');if(!root)return;
+const canvas=root.querySelector('canvas'),ctx=canvas.getContext('2d');if(!ctx)return;
+const WORD='REBOLLO',BIRDS=4200,FLY=7,HOLD=3.2;
+const C={skyTop:'#080B14',skyLow:'#1E1209',sun:'#D9B26F',ink:'#EDE3CF',lead:'#E2A75A'};
+const FONT='"Archivo", "Arial Narrow", Arial, sans-serif';
+function R(seed){let a=(seed>>>0)||1;return()=>{a=(a+0x6d2b79f5)>>>0;let t=a;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296}}
+function curl(x,y,t){const a=1.7*x+t,b=1.3*y-.6*t,c=2.9*y+1.1*x-.8*t,d=4.3*x-3.7*y+1.3*t;
+ const dx=1.7*Math.cos(a)*Math.cos(b)+.66*Math.cos(c)-.35*4.3*Math.sin(d);const dy=-1.3*Math.sin(a)*Math.sin(b)+.6*2.9*Math.cos(c)+.35*3.7*Math.sin(d);return[dy,-dx]}
+const centre=t=>[.42*Math.sin(t*.21)+.12*Math.sin(t*.53+1),.16*Math.sin(t*.33+2)-.08];
+const ease=k=>{const x=k<0?0:k>1?1:k;return x*x*(3-2*x)};
+function assign(nb,np,seed){const out=new Int32Array(nb);if(np<=0)return out.fill(-1);const o=new Int32Array(np);for(let i=0;i<np;i++)o[i]=i;const r=R(seed);for(let i=np-1;i>0;i--){const j=Math.floor(r()*(i+1));const t=o[i];o[i]=o[j];o[j]=t}for(let i=0;i<nb;i++)out[i]=o[i%np];return out}
+function alpha(hex,a){const h=hex.slice(1);return`rgba(${parseInt(h.slice(0,2),16)},${parseInt(h.slice(2,4),16)},${parseInt(h.slice(4,6),16)},${a})`}
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let w=1,h=1,dpr=1,n=0,raf=0,visible=true,sky=null,px,py,vx,vy,depth,phase,target,tx=new Float32Array(0),ty=new Float32Array(0),hx=-1e5,hy=-1e5,last=performance.now(),clock=0;
+const rand=R(11);
+function layout(){
+ const r=root.getBoundingClientRect();w=Math.max(1,Math.round(r.width));h=Math.max(1,Math.round(r.height));dpr=Math.min(devicePixelRatio||1,2);
+ canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);
+ sky=document.createElement('canvas');sky.width=canvas.width;sky.height=canvas.height;const s=sky.getContext('2d');s.setTransform(dpr,0,0,dpr,0,0);
+ const g=s.createLinearGradient(0,0,0,h);g.addColorStop(0,C.skyTop);g.addColorStop(.8,C.skyLow);g.addColorStop(1,C.skyLow);s.fillStyle=g;s.fillRect(0,0,w,h);
+ const sun=s.createRadialGradient(w*.5,h*1.02,0,w*.5,h*1.02,Math.max(w,h)*.6);sun.addColorStop(0,alpha(C.sun,.55));sun.addColorStop(.3,alpha(C.sun,.18));sun.addColorStop(1,alpha(C.sun,0));s.fillStyle=sun;s.fillRect(0,0,w,h);
+ const top=s.createLinearGradient(0,0,0,h*.25);top.addColorStop(0,C.skyTop);top.addColorStop(1,alpha(C.skyTop,0));s.fillStyle=top;s.fillRect(0,0,w,h*.25);
+ const gr=R(5);for(let i=0;i<(w*h)/10;i++){s.fillStyle=gr()<.5?'rgba(255,255,255,0.025)':'rgba(0,0,0,0.04)';s.fillRect(gr()*w,gr()*h,1,1)}
+ const m=document.createElement('canvas');m.width=w;m.height=h;const mc=m.getContext('2d',{willReadFrequently:true});const pts=[];
+ mc.font='900 100px '+FONT;const ww=mc.measureText(WORD).width||1;const size=Math.min(((w*(w<600?.94:.82))/ww)*100,(h*.46)/.72);
+ mc.font='900 '+size+'px '+FONT;mc.textAlign='center';mc.textBaseline='middle';mc.fillText(WORD,w/2,h*.46);
+ const img=mc.getImageData(0,0,w,h).data;const step=Math.max(2,Math.round(Math.sqrt((w*h)/90000)));
+ for(let y=0;y<h;y+=step)for(let x=0;x<w;x+=step)if(img[(y*w+x)*4+3]>128)pts.push(x+(rand()-.5)*step,y+(rand()-.5)*step);
+ tx=new Float32Array(pts.filter((_,i)=>i%2===0));ty=new Float32Array(pts.filter((_,i)=>i%2===1));
+ const want=Math.round(Math.max(600,Math.min(9000,BIRDS))*Math.min(1,(w*h)/(1440*860)));
+ if(want!==n){n=Math.max(500,want);px=new Float32Array(n);py=new Float32Array(n);vx=new Float32Array(n);vy=new Float32Array(n);depth=new Float32Array(n);phase=new Float32Array(n);
+  for(let i=0;i<n;i++){const a=rand()*Math.PI*2,rr=Math.sqrt(rand());px[i]=w*.5+Math.cos(a)*rr*w*.22;py[i]=h*.4+Math.sin(a)*rr*h*.16;depth[i]=.55+rand()*.45;phase[i]=rand()*Math.PI*2}}
+ target=assign(n,tx.length,23);
+}
+function frame(now){
+ raf=requestAnimationFrame(frame);if(!visible){last=now;return}
+ const dt=reduced?0:Math.min(.05,(now-last)/1000);last=now;clock+=dt;
+ const cycle=FLY+2.4+HOLD+.6,tc=clock%cycle;let pull=0;
+ if(tc>FLY&&tc<=FLY+2.4)pull=ease((tc-FLY)/2.4);else if(tc>FLY+2.4&&tc<=FLY+2.4+HOLD)pull=1;else if(tc>FLY+2.4+HOLD)pull=1-ease((tc-FLY-2.4-HOLD)/.6);
+ if(reduced)pull=1;
+ const u=Math.min(w,h),cen=centre(clock),cxp=w/2+cen[0]*w*.5,cyp=h*.42+cen[1]*h,t=clock*.35,hawk=hx>-1e4,hawkR=u*.16;
+ for(let i=0;i<n;i++){let x=px[i],y=py[i],ax=0,ay=0;const cv=curl(((x-w/2)/u)*2.2+depth[i]*.25,((y-h/2)/u)*2.2,t),free=1-pull;
+  ax+=cv[0]*420*free;ay+=cv[1]*420*free;const dxC=cxp-x,dyC=(cyp-y)*1.6,dC=Math.hypot(dxC,dyC)/u,hold=dC<.14?.15:.15+(dC-.14)*6;
+  ax+=dxC*hold*2.2*free;ay+=dyC*hold*1.6*free;const ti=target[i];
+  if(pull>0&&ti>=0){ax+=(tx[ti]-x)*9*pull-vx[i]*3.2*pull;ay+=(ty[ti]-y)*9*pull-vy[i]*3.2*pull}
+  if(hawk){const dx=x-hx,dy=y-hy,d2=dx*dx+dy*dy;if(d2<hawkR*hawkR){const d=Math.sqrt(d2)+.01,f=(1-d/hawkR)*5200;ax+=(dx/d)*f;ay+=(dy/d)*f}}
+  let nvx=(vx[i]+ax*dt)*(1-1.1*dt),nvy=(vy[i]+ay*dt)*(1-1.1*dt);const sp=Math.hypot(nvx,nvy),cap=520+380*pull;
+  if(sp>cap){nvx=nvx/sp*cap;nvy=nvy/sp*cap}vx[i]=nvx;vy[i]=nvy;px[i]=x+nvx*dt;py[i]=y+nvy*dt;phase[i]+=dt*(9+sp*.02)}
+ if(reduced&&clock===0){for(let i=0;i<n;i++){const ti=target[i];if(ti>=0){px[i]=tx[ti];py[i]=ty[ti]}}}
+ const bk=Math.min(1,Math.max(.5,w/1100));ctx.setTransform(1,0,0,1,0,0);if(sky)ctx.drawImage(sky,0,0);ctx.setTransform(dpr,0,0,dpr,0,0);
+ for(let pass=0;pass<2;pass++){ctx.beginPath();
+  for(let i=0;i<n;i++){const near=depth[i]>.78;if((pass===1)!==near)continue;const s=(1.6+depth[i]*2.2)*(1-.35*pull)*bk,sp=Math.hypot(vx[i],vy[i])+.001,dx=vx[i]/sp,dy=vy[i]/sp,flap=.55+.45*Math.sin(phase[i]),bx=px[i],by=py[i],wx=-dx*s,wy=-dy*s,nx=-dy*s*flap,ny=dx*s*flap;
+   ctx.moveTo(bx+wx+nx,by+wy+ny);ctx.lineTo(bx,by);ctx.lineTo(bx+wx-nx,by+wy-ny)}
+  ctx.strokeStyle=pass===0?C.ink:C.lead;ctx.globalAlpha=pass===0?.5:.9;ctx.lineWidth=pass===0?.9:1.25;ctx.stroke()}
+ ctx.globalAlpha=1;
+}
+root.addEventListener('pointermove',e=>{const b=canvas.getBoundingClientRect();hx=e.clientX-b.left;hy=e.clientY-b.top});
+root.addEventListener('pointerleave',()=>{hx=hy=-1e5});
+layout();raf=requestAnimationFrame(frame);
+new ResizeObserver(()=>layout()).observe(root);
+new IntersectionObserver(es=>{visible=es[0]?es[0].isIntersecting:true}).observe(root);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(layout);
+})();
+</script>
+
+
+
+
+</body>
+</html>
